@@ -1,0 +1,33 @@
+.members {
+  padding: 60px 0;
+
+  @media (max-width: 768px) {
+    padding: 40px 0;
+  }
+}
+
+.members__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+
+  @media (max-width: 880px) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(267px, 1fr));
+    justify-items: center;
+  }
+}
+
+.members__block {
+  display: flex;
+  gap: 20px;
+}
+
+.members__text {
+  font-size: clamp(1.125rem, 0.989rem + 0.68vw, 1.5rem);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px; /* 125% */
+  text-transform: uppercase;
+}

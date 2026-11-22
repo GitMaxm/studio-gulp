@@ -1,0 +1,86 @@
+.header {
+  background:
+    radial-gradient(
+      838.19% 378.3% at 69.44% -79.86%,
+      rgba(31, 35, 39, 0) 0%,
+      #191c1f 47.89%,
+      rgba(31, 35, 39, 0) 100%
+    ),
+    url(./../img/film-set.jpg);
+  padding-top: 30px;
+  min-height: 700px;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__column {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 125px;
+  }
+}
+
+.header__content {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+
+  max-width: 746px;
+
+  @media (max-width: 500px) {
+    align-items: center;
+    text-align: center;
+  }
+
+  &-text {
+    font-size: clamp(1.125rem, 0.989rem + 0.68vw, 1.5rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+
+  &-btn {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    border-radius: 40px;
+    background: #e11b19;
+
+    transition: opacity 0.3s ease;
+  }
+
+  &-btn:hover {
+    opacity: 0.7;
+  }
+}
+
+.button__text {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 125% */
+  text-transform: uppercase;
+
+  @media (max-width: 728px) {
+    font-size: 14px;
+  }
+}
+
+.logo {
+  transition: opacity 0.3s ease;
+
+  @media (max-width: 500px) {
+    width: 120px;
+  }
+}
+
+.logo:hover {
+  opacity: 0.7;
+}
