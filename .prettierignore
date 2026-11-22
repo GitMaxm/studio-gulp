@@ -1,0 +1,7 @@
+img/
+node_modules/
+screenshots/
+.DS_Store
+css/main.css
+css/main.css.map
+js/index.bundle.js
